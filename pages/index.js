@@ -6,7 +6,7 @@ export default function Home() {
    const router = useRouter()
 
    React.useEffect(() => {
-      router.push('/home?dest=Mon Petit Coeur')
+      router.push('/home?dest=Petit Coeur')
    }, [router])
 
    return (
