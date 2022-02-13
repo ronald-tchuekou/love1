@@ -98,6 +98,9 @@ export default function Home() {
                   " Pour toi je suis près à tout. Gros bisous"}
             </p>
          </div>
+         <footer>
+            <p>&copy; Copyright 2022 - Created by Ronald Tchuekou</p>
+         </footer>
       </div>
    )
 }
