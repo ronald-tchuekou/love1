@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import React from "react";
 import anime from "animejs";
+import {useRouter} from "next/router";
 
 export default function Home() {
    const [dest_name, setDesName] = React.useState('Petit coeur')
+   const router = useRouter()
 
    React.useEffect(() => {
       setHearts()
@@ -14,7 +16,7 @@ export default function Home() {
       showMessage()
    }, [])
 
-   function showMessage(){
+   function showMessage() {
       let ta = document.querySelector(".message_container"),
          duration = 500,
          delay = 5000
@@ -99,6 +101,10 @@ export default function Home() {
             </p>
          </div>
          <footer>
+            <button onClick={() => {
+               router.push('/form')
+            }} className={"button"}>Cliquer ici
+            </button>
             <p>&copy; Copyright 2022 - Created by Ronald Tchuekou</p>
          </footer>
       </div>

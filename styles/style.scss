@@ -15,7 +15,15 @@
   align-items: center;
   overflow: hidden;
   min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
   background-color: #ff7777;
+}
+
+.error{
+  font-family: sans-serif;
+  color: red;
+  font-size: 18px;
 }
 
 .container {
@@ -118,4 +126,55 @@ footer{
   color: white;
   text-align: center;
   z-index: 700;
+}
+
+.form_container{
+  display: flex;
+  flex-direction: column;
+  min-width: calc(100% - 20);
+  max-width: 700px;
+  padding: 10px;
+  img{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+  }
+  h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .input_form{
+    padding: 8px 14px;
+    font-family: sans-serif;
+    color: #2f2e2e;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin: 10px 0;
+  }
+}
+
+.copyright{
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  margin: 20px 10px;
+}
+
+.button{
+  background-color: white;
+  color: #e80202;
+  font: inherit;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
